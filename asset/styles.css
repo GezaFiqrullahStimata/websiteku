@@ -13,14 +13,14 @@ body{
     background-color: #bdc3c7 ;
 }
 .content {
-    width: 800px;
+    width: 950px;
     height: 600px;
     background: yellowgreen;
     float: right;
 }
 
 .sidebar {
-    width: 400px;
+    width: 250px;
     height: 600px;
     background: yellow;
     float: left;
