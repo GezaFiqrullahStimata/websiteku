@@ -17,3 +17,7 @@
     background: yellowgreen;
     float: right;
 }
+
+.clear{
+    clear: both;
+}
