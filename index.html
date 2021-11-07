@@ -22,8 +22,8 @@
                     </div>
                     <div id="menu">
                         <ul>
-                            <li><a href="#" id="home" onclick="myFunction()" >Tentang</a></li>
-                            <li><a href="#" id="about">Kontak</a></li>
+                            <li><a href="#" id="home" >Tentang</a></li>
+                            <li ><a href="#" id="about"  >Kontak</a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,10 +89,13 @@
 
 
                 </div>
-                <video width="320" height="250" controls>
-                    <source src="asset/subscribe_geza_fiqrullah.mp4" type="video/mp4">
-                    <!-- jangan lupa subscribe geza fiqrullah bu -->
-                  </video>
+                <!-- <video width="320" height="250" controls>
+                    <source src="https://www.youtube.com/watch?v=a-qW2N_Mh0Q" type="video/mp4">
+                    jangan lupa subscribe geza fiqrullah bu
+                  </video> -->
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
             </div>
             </div>
             <div id="toastX" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -120,9 +123,17 @@
     </body>
 </html>
 <script>
-    function myFunction(){
-        var myToastEl = document.getElementById('toastX')
-        myToastEl.show();
+    // function myFunction(){
+    //     var myToastEl = document.getElementById('toastX')
+    //     myToastEl.show();
+    // }
+    function myFunction() {
+        var x = document.getElementsByClassName(".content");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
     }
 </script>
 
