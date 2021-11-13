@@ -33,7 +33,10 @@ $(function() {
             	   $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             		.append( "</button>");
             	  $('#success > .alert-success')
-            		.append("<strong>Your message has been sent. </strong>");
+            		.append("Nama anda : "+"<strong>"+name+"</strong><br>"+
+                        "Alamat email anda : "+"<strong>"+email+"</strong><br>"+
+                        "Pesan anda : "+"<strong>"+message+"</strong><br>"
+                );
  		  $('#success > .alert-success')
  			.append('</div>');
  						    

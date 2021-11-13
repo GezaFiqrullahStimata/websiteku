@@ -193,7 +193,53 @@
 					</div>
   </div>
 </section> 
+<section id="contactUs" class="contact-parlex">
+  <div class="parlex-back">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center"> 
+          <!-- Heading -->
+          <h2>Contact Us</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+        </div>
+      </div>
+      <div class="row mrgn30">
+       	<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+		<form name="sentMessage" id="contactForm"  novalidate>
+		<h3>Contact Form</h3>
+		<div class="control-group">
+		<div class="controls">
+		<input type="text" class="form-control" 
+		placeholder="Full Name" id="name" required
+		data-validation-required-message="Mohon Masukkan Nama Anda" />
+		<p class="help-block"></p>
+		</div>
+		</div> 	
+		<div class="control-group">
+		<div class="controls">
+		<input type="email" class="form-control" placeholder="Email" 
+		id="email" required
+		data-validation-required-message="Mohon Masukkan Email Anda" />
+		</div>
+		</div> 	
 
+		<div class="control-group">
+		<div class="controls">
+		<textarea rows="10" cols="100" class="form-control" 
+		placeholder="Message" id="message" required
+		data-validation-required-message="Mohon Masukkan Saran Dan Kritik Anda" minlength="5" 
+		data-validation-minlength-message="Minimal 5 Karakter" 
+		maxlength="999" style="resize:none"></textarea>
+		</div>
+		</div> 		 
+		<div id="success"> </div> <!-- For success/fail messages -->
+		<button type="submit" onclick="alert()" class="btn btn-primary pull-right">Send</button><br />
+		</form>
+      </div>
+    </div>
+    <!--/.container--> 
+  </div>
+</section>
 <footer>
 <div class="container">
         <div class="row">
@@ -252,3 +298,8 @@
 <script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>
+<script>
+  function alert(){
+    alert("Hello! I am an alert box!!");
+  }
+</script>
